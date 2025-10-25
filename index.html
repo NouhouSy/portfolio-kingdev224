@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - KingDev224</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-terminal"></i> KingDev224
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <button class="dark-mode-toggle" id="darkModeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero visible">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bonjour, I'm <strong>Ibrahima Nouhou SY</strong></h1>
+                <h1>Développeur Web Full Stack</h1>
+                <p class="subtitle">Python | Django | JavaScript | React</p>
+                <a href="#contact" class="btn btn-primary-custom">
+                    <i class="fas fa-envelope"></i> Me Contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>À Propos</h2>
+            </div>
+            <div class="about-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center">
+                        <div class="profile-img-container">
+                            <img src="images/img1.png" alt="Photo de profil" class="profile-img">
+                        </div>
+                        <a href="fichiers/CV.pdf" target="_blank" download="CV.pdf" class="btn btn-primary-custom mt-3">
+                            <i class="fas fa-download"></i> Télécharger CV
+                        </a>
+                    </div>
+                    <div class="col-lg-8">
+                        <h3 class="mb-4">Développeur Web Passionné</h3>
+                        <p>
+                            Passionné par le développement web et les nouvelles technologies, je me spécialise dans la création d'applications web modernes et performantes. Avec une expertise en Python et Django pour le backend, et une maîtrise des technologies frontend modernes, je transforme vos idées en solutions digitales innovantes.
+                        </p>
+                        <p>
+                            Mon approche combine créativité et rigueur technique pour livrer des projets qui répondent aux besoins réels des utilisateurs tout en respectant les meilleures pratiques du développement web.
+                        </p>
+                        <div class="quote">
+                            "Le code est comme l'humour. Quand on doit l'expliquer, c'est qu'il n'est pas bon."
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <p><strong><i class="fas fa-graduation-cap text-primary"></i> Formation :</strong> MIAGE</p>
+                                <p><strong><i class="fas fa-map-marker-alt text-danger"></i> Localisation :</strong> Guinée</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong><i class="fas fa-envelope text-warning"></i> Email :</strong> ibrahimanouhousy27@gmail.com</p>
+                                <p><strong><i class="fas fa-briefcase text-success"></i> Statut :</strong> Disponible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compétences</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>Frontend</h3>
+                        <div class="mb-3">
+                            <label>HTML5</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label>CSS3 / Bootstrap</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <label>JavaScript</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <label>React JS</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Backend</h3>
+                        <div class="mb-3">
+                            <label>Python</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 88%" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label>Django</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 82%" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <label>SQL / PostgreSQL</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label>PHP</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 82%" data-width="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Outils</h3>
+                        <div class="mb-3">
+                            <label>Git / GitHub</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label>VS Code</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Docker</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mes Projets</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Plateforme de vente en ligne complète avec gestion des stocks, paiements sécurisés et tableau de bord administrateur.</p>
+                            <button class="btn btn-primary-custom btn-sm">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>Blog Personnel</h3>
+                            <p>Blog moderne avec système de commentaires, catégories, tags et éditeur de texte riche pour la création d'articles.</p>
+                            <button class="btn btn-primary-custom btn-sm">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>Task Manager</h3>
+                            <p>Application de gestion de tâches collaborative avec notifications en temps réel et système de priorités.</p>
+                            <button class="btn btn-primary-custom btn-sm">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>Dashboard Analytics</h3>
+                            <p>Tableau de bord interactif avec visualisation de données en temps réel et génération de rapports personnalisés.</p>
+                            <button class="btn btn-primary-custom btn-sm">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>App Mobile Responsive</h3>
+                            <p>Application web progressive (PWA) avec fonctionnalités offline et expérience utilisateur mobile-first.</p>
+                            <button class="btn btn-primary-custom btn-sm">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>Social Network</h3>
+                            <p>Réseau social avec profils utilisateurs, système d'amis, publications, likes et messagerie instantanée.</p>
+                            <button class="btn btn-primary-custom btn-sm">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-moi</h2>
+            </div>
+            
+            <!-- Formulaire + Infos Contact -->
+            <div class="row mb-5">
+                <!-- Colonne Formulaire -->
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <div class="contact-form">
+                        <h3 class="mb-4">
+                            <i class="fas fa-envelope-open-text"></i> Envoyez-moi un message
+                        </h3>
+                        <form id="contactForm">
+                            <div class="mb-4">
+                                <label for="name" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="votre@email.com" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="form-label">Sujet</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Sujet de votre message">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Votre message..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100">
+                                <i class="fas fa-paper-plane"></i> Envoyer le message
+                            </button>
+                        </form>
+                        <div class="success-message" id="successMessage">
+                            <i class="fas fa-check-circle"></i> Message envoyé avec succès! Je vous répondrai bientôt.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonne Informations de Contact -->
+                <div class="col-lg-5">
+                    <div class="contact-info-card">
+                        <h3 class="mb-4">
+                            <i class="fas fa-address-book"></i> Mes Coordonnées
+                        </h3>
+                        
+                        <!-- Info Item 1 -->
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Adresse</h5>
+                                <p>Lambanyi, Conakry<br>Guinée</p>
+                            </div>
+                        </div>
+
+                        <!-- Info Item 2 -->
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email</h5>
+                                <p>ibrahimanouhousy27@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Info Item 3 -->
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Téléphone</h5>
+                                <p>+224 664 76 12 97</p>
+                            </div>
+                        </div>
+
+                        <!-- Info Item 4 -->
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Disponibilité</h5>
+                                <p>Lundi - Sam<br>9h00 - 18h00</p>
+                            </div>
+                        </div>
+
+                        <!-- Réseaux Sociaux -->
+                        <div class="contact-social">
+                            <h5 class="mb-3">Suivez-moi</h5>
+                            <div class="social-links">
+                                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Maps -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-container">
+                        <h3 class="mb-4 text-center">
+                            <i class="fas fa-map-marked-alt"></i> Ma Localisation
+                        </h3>
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15770.234567890123!2d-13.6785!3d9.5092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf1cd0d9b4c5f5f5%3A0x1234567890abcdef!2sLambanyi%2C%20Conakry%2C%20Guin%C3%A9e!5e0!3m2!1sfr!2sfr!4v1234567890123!5m2!1sfr!2sfr" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0; border-radius: 15px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Colonne 1 : À propos -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">
+                        <i class="fas fa-terminal"></i> MonPortfolio
+                    </h5>
+                    <p class="footer-description">
+                        Développeur web passionné, spécialisé dans la création d'applications modernes et performantes. Transformons ensemble vos idées en réalité digitale.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Colonne 2 : Navigation rapide -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Navigation</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-angle-right"></i> Accueil</a></li>
+                        <li><a href="#about"><i class="fas fa-angle-right"></i> À propos</a></li>
+                        <li><a href="#skills"><i class="fas fa-angle-right"></i> Compétences</a></li>
+                        <li><a href="#projects"><i class="fas fa-angle-right"></i> Projets</a></li>
+                        <li><a href="#contact"><i class="fas fa-angle-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Colonne 3 : Services -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-check"></i> Développement Web</a></li>
+                        <li><a href="#"><i class="fas fa-check"></i> Applications Django</a></li>
+                        <li><a href="#"><i class="fas fa-check"></i> Frontend React</a></li>
+                        <li><a href="#"><i class="fas fa-check"></i> API REST</a></li>
+                        <li><a href="#"><i class="fas fa-check"></i> Responsive Design</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Colonne 4 : Contact -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Contact</h5>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Conakry, Guinée</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>ibrahimanouhousy27@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+224 664 76 12 97</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lun - Sam : 9h - 18h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Ligne de séparation -->
+            <hr class="footer-divider">
+    
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="footer-copyright">
+                        &copy; 2025 <strong>MonPortfolio</strong>. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="footer-credits">
+                        Développé avec <i class="fas fa-heart text-danger"></i> et <i class="fas fa-coffee"></i> par <strong>KingDev224</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Vague décorative (optionnelle) -->
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
