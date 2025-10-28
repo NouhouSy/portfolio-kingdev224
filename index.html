@@ -13,30 +13,56 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="mainNav">
         <div class="container">
+            <!-- Logo avec animation -->
             <a class="navbar-brand" href="#home">
-                <i class="fas fa-terminal"></i> KingDev224
+                <span class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </span>
+                <span class="logo-text">
+                    <span class="logo-name">KingDev</span><span class="logo-highlight">224</span>
+                </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+
+            <!-- Toggle button avec animation -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Accueil</a>
+                        <a class="nav-link active" href="#home">
+                            <i class="fas fa-home nav-icon"></i>
+                            <span>Accueil</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">À propos</a>
+                        <a class="nav-link" href="#about">
+                            <i class="fas fa-user nav-icon"></i>
+                            <span>À propos</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Compétences</a>
+                        <a class="nav-link" href="#skills">
+                            <i class="fas fa-cogs nav-icon"></i>
+                            <span>Compétences</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projets</a>
+                        <a class="nav-link" href="#projects">
+                            <i class="fas fa-folder-open nav-icon"></i>
+                            <span>Projets</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <span>Contact</span>
+                        </a>
                     </li>
                     <li class="nav-item ms-3">
                         <button class="dark-mode-toggle" id="darkModeToggle">
@@ -50,16 +76,103 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero visible">
-        <div class="hero-overlay"></div>
+        <!-- Background animé -->
+        <div class="hero-background">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
         <div class="container">
-            <div class="hero-content">
-                <h1>Bonjour, I'm <strong>Ibrahima Nouhou SY</strong></h1>
-                <h1>Développeur Web Full Stack</h1>
-                <p class="subtitle">Python | Django | JavaScript | React</p>
-                <a href="#contact" class="btn btn-primary-custom">
-                    <i class="fas fa-envelope"></i> Me Contacter
-                </a>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <!-- Badge de statut -->
+                        <div class="hero-badge">
+                            <span class="status-dot"></span>
+                            Disponible pour des projets
+                        </div>
+
+                        <!-- Texte principal -->
+                        <h1 class="hero-title">
+                            Bonjour, je suis 
+                            <span class="typed-text">
+                                <span class="high">Ibrahima <br> Nouhou SY</span>
+                            </span>
+                            <span class="typed-text">
+                                <span class="highlight">Développeur Web</span>
+                            </span>
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Je transforme vos idées en <strong>solutions digitales</strong> innovantes. 
+                            Spécialisé en <span class="tech-highlight">Python</span>, 
+                            <span class="tech-highlight">Django</span> et 
+                            <span class="tech-highlight">Frontend</span>.
+                        </p>
+
+                        <!-- Boutons d'action -->
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary-hero">
+                                <i class="fas fa-envelope"></i>
+                                Me Contacter
+                            </a>
+                            <a href="#projects" class="btn btn-secondary-hero">
+                                <i class="fas fa-folder-open"></i>
+                                Voir Projets
+                            </a>
+                        </div>
+
+                        <!-- Stats -->
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <h3>5+</h3>
+                                <p>Projets Complétés</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>3+</h3>
+                                <p>Technologies</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonne illustration -->
+                <div class="col-lg-6">
+                    <div class="hero-illustration">
+                        <!-- Image ou animation -->
+                        <div class="hero-image-wrapper">
+                            <!-- OU icône animée -->
+                            <div class="code-animation">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Badges flottants -->
+                        <div class="floating-badge badge-1">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="floating-badge badge-3">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span>Défiler</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
@@ -67,37 +180,147 @@
     <section id="about">
         <div class="container">
             <div class="section-header">
-                <h2>À Propos</h2>
+                <h2>À Propos de Moi</h2>
+                <p class="section-subtitle">Découvrez mon parcours et mes compétences</p>
             </div>
-            <div class="about-content">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-center">
-                        <div class="profile-img-container">
-                            <img src="images/img1.png" alt="Photo de profil" class="profile-img">
-                        </div>
-                        <a href="fichiers/CV.pdf" target="_blank" download="CV.pdf" class="btn btn-primary-custom mt-3">
-                            <i class="fas fa-download"></i> Télécharger CV
-                        </a>
-                    </div>
-                    <div class="col-lg-8">
-                        <h3 class="mb-4">Développeur Web Passionné</h3>
-                        <p>
-                            Passionné par le développement web et les nouvelles technologies, je me spécialise dans la création d'applications web modernes et performantes. Avec une expertise en Python et Django pour le backend, et une maîtrise des technologies frontend modernes, je transforme vos idées en solutions digitales innovantes.
-                        </p>
-                        <p>
-                            Mon approche combine créativité et rigueur technique pour livrer des projets qui répondent aux besoins réels des utilisateurs tout en respectant les meilleures pratiques du développement web.
-                        </p>
-                        <div class="quote">
-                            "Le code est comme l'humour. Quand on doit l'expliquer, c'est qu'il n'est pas bon."
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-md-6">
-                                <p><strong><i class="fas fa-graduation-cap text-primary"></i> Formation :</strong> MIAGE</p>
-                                <p><strong><i class="fas fa-map-marker-alt text-danger"></i> Localisation :</strong> Guinée</p>
+
+            <div class="about-wrapper">
+                <div class="row align-items-center g-5">
+                    <!-- Colonne Image -->
+                    <div class="col-lg-5">
+                        <div class="about-image-section">
+                            <!-- Image principale avec cadre décoratif -->
+                            <div class="profile-frame">
+                                <div class="frame-decoration frame-top-left"></div>
+                                <div class="frame-decoration frame-bottom-right"></div>
+                                <div class="profile-img-container">
+                                    <img src="images/img1.png" alt="Photo de profil" class="profile-img">
+                                    <div class="profile-overlay">
+                                        <div class="overlay-content">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <p><strong><i class="fas fa-envelope text-warning"></i> Email :</strong> ibrahimanouhousy27@gmail.com</p>
-                                <p><strong><i class="fas fa-briefcase text-success"></i> Statut :</strong> Disponible</p>
+
+                            <!-- Stats rapides -->
+                            <div class="quick-stats">
+                                <div class="stat-box">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <h4>15+</h4>
+                                        <p>Projets</p>
+                                    </div>
+                                </div>
+                                <div class="stat-box">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-code-branch"></i>
+                                    </div>
+                                    <div class="stat-info">
+                                        <h4>500+</h4>
+                                        <p>Commits</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bouton CV -->
+                            <a href="fichiers/CV.pdf" target="_blank" download="CV.pdf" class="btn-download-cv">
+                                <span class="btn-content">
+                                    <i class="fas fa-download"></i>
+                                    <span>Télécharger CV</span>
+                                </span>
+                                <span class="btn-shine"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Colonne Contenu -->
+                    <div class="col-lg-7">
+                        <div class="about-content-section">
+                            <!-- Badge de statut -->
+                            <div class="status-badge">
+                                <span class="status-indicator"></span>
+                                Disponible pour de nouveaux projets
+                            </div>
+
+                            <!-- Titre et description -->
+                            <h3 class="about-title">
+                                Développeur Web <span class="gradient-text">Passionné</span>
+                            </h3>
+                            
+                            <p class="about-description">
+                                Passionné par le développement web et les nouvelles technologies, je me spécialise dans la création d'applications web <strong>modernes et performantes</strong>. Avec une expertise en Python et Django pour le backend, et une maîtrise des technologies frontend modernes, je transforme vos idées en solutions digitales innovantes.
+                            </p>
+                            
+                            <p class="about-description">
+                                Mon approche combine <strong>créativité</strong> et <strong>rigueur technique</strong> pour livrer des projets qui répondent aux besoins réels des utilisateurs tout en respectant les meilleures pratiques du développement web.
+                            </p>
+
+                            <!-- Citation inspirante -->
+                            <div class="quote-box">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p class="quote-text">
+                                    Le code est comme l'humour. Quand on doit l'expliquer, c'est qu'il n'est pas bon.
+                                </p>
+                                <div class="quote-author">- Cory House</div>
+                            </div>
+
+                            <!-- Informations détaillées -->
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Formation</span>
+                                        <span class="info-value">MIAGE</span>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Localisation</span>
+                                        <span class="info-value">Guinée, Conakry</span>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Email</span>
+                                        <span class="info-value">ibrahimanouhousy27@gmail.com</span>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Statut</span>
+                                        <span class="info-value status-available">Disponible</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Technologies principales -->
+                            <div class="tech-stack">
+                                <h5 class="tech-title">Technologies principales :</h5>
+                                <div class="tech-badges">
+                                    <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                                    <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+                                    <span class="tech-badge"><i class="fas fa-database"></i> Django</span>
+                                    <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+                                    <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+                                    <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -195,6 +418,12 @@
                                 <div class="progress-bar" role="progressbar" style="width: 70%" data-width="70"></div>
                             </div>
                         </div>
+                        <div>
+                            <label>Claude AI</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" data-width="70"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,6 +511,176 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <h2>Témoignages</h2>
+            <p class="section-subtitle">Ce que disent mes clients et collaborateurs</p>
+        </div>
+
+        <div class="testimonials-wrapper">
+            <!-- Slider de témoignages -->
+            <div class="testimonials-slider">
+                <!-- Témoignage 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/Client1.jpeg" alt="Client 1">
+                            <div class="avatar-badge">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Jean Dupont</h4>
+                            <p class="testimonial-position">CEO - TechStart</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <i class="fas fa-quote-left quote-icon-left"></i>
+                        <p class="testimonial-text">
+                            Excellent travail ! Le site développé dépasse nos attentes. L'équipe a su comprendre nos besoins et livrer un produit de qualité dans les délais. Je recommande vivement !
+                        </p>
+                        <i class="fas fa-quote-right quote-icon-right"></i>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="project-info">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Site E-commerce</span>
+                        </div>
+                        <div class="date-info">
+                            <i class="fas fa-calendar"></i>
+                            <span>Janvier 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/Client2.jpeg" alt="Client 2">
+                            <div class="avatar-badge">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Marie Lambert</h4>
+                            <p class="testimonial-position">Directrice Marketing - InnoWeb</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <i class="fas fa-quote-left quote-icon-left"></i>
+                        <p class="testimonial-text">
+                            Très professionnel et à l'écoute. L'application développée est intuitive et performante. La collaboration a été fluide du début à la fin. Un grand merci !
+                        </p>
+                        <i class="fas fa-quote-right quote-icon-right"></i>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="project-info">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Application Web</span>
+                        </div>
+                        <div class="date-info">
+                            <i class="fas fa-calendar"></i>
+                            <span>Décembre 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="images/Client3.jpeg" alt="Client 3">
+                            <div class="avatar-badge">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Ahmed Diallo</h4>
+                            <p class="testimonial-position">Fondateur - DigiSolutions</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <i class="fas fa-quote-left quote-icon-left"></i>
+                        <p class="testimonial-text">
+                            Code propre, documentation claire et excellent support. Le projet a été livré avant la date prévue avec toutes les fonctionnalités demandées. Très satisfait !
+                        </p>
+                        <i class="fas fa-quote-right quote-icon-right"></i>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="project-info">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Dashboard Analytics</span>
+                        </div>
+                        <div class="date-info">
+                            <i class="fas fa-calendar"></i>
+                            <span>Novembre 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation du slider -->
+            <div class="testimonial-navigation">
+                <button class="testimonial-prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-dots" id="dotsContainer">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="testimonial-next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Stats clients -->
+        <div class="testimonial-stats">
+            <div class="stat-item-testimonial">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Satisfaction Client</div>
+            </div>
+            <div class="stat-item-testimonial">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Clients Satisfaits</div>
+            </div>
+            <div class="stat-item-testimonial">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Projets Livrés</div>
+            </div>
+            <div class="stat-item-testimonial">
+                <div class="stat-number">5★</div>
+                <div class="stat-label">Note Moyenne</div>
+            </div>
+        </div>
+    </div>
     </section>
 
     <!-- Contact Section -->
