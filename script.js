@@ -290,3 +290,103 @@ window.addEventListener('load', () => {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+// Testimonial Slider
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.testimonials-slider');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dots = document.querySelectorAll('.dot');
+    
+    let currentSlide = 0;
+    const totalSlides = cards.length;
+
+    // Fonction pour aller à un slide spécifique
+    function goToSlide(slideIndex) {
+        if (slideIndex < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (slideIndex >= totalSlides) {
+            currentSlide = 0;
+        } else {
+            currentSlide = slideIndex;
+        }
+
+        // Défilement fluide
+        const scrollAmount = cards[currentSlide].offsetLeft - slider.offsetLeft;
+        slider.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+
+        // Mise à jour des dots
+        updateDots();
+    }
+
+    // Mise à jour des dots actifs
+    function updateDots() {
+        dots.forEach((dot, index) => {
+            if (index === currentSlide) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+    }
+
+    // Bouton précédent
+    prevBtn.addEventListener('click', () => {
+        goToSlide(currentSlide - 1);
+    });
+
+    // Bouton suivant
+    nextBtn.addEventListener('click', () => {
+        goToSlide(currentSlide + 1);
+    });
+
+    // Clic sur les dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+        });
+    });
+
+    // Auto-play (optionnel - décommenter si souhaité)
+
+    setInterval(() => {
+        goToSlide(currentSlide + 1);
+    }, 5000);
+
+    // Navigation au clavier
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            goToSlide(currentSlide - 1);
+        } else if (e.key === 'ArrowRight') {
+            goToSlide(currentSlide + 1);
+        }
+    });
+
+    // Swipe sur mobile (tactile)
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    slider.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            // Swipe gauche
+            goToSlide(currentSlide + 1);
+        }
+        if (touchEndX > touchStartX + 50) {
+            // Swipe droite
+            goToSlide(currentSlide - 1);
+        }
+    }
+});
